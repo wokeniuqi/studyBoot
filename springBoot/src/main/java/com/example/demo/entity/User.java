@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class User {
     @Id
     @GeneratedValue
-    private Integer id;
+    private Integer userId;
     @Column
     private String name;
     @Column

@@ -11,14 +11,13 @@ import javax.annotation.Resource;
 @Controller
 public class UserMybatisController {
 
-    @Resource
-    private UserMapper userMapper;
 
     @RequestMapping("/findByName")
     @ResponseBody
     public User findByName (){
-        User user= userMapper.findByName("likai");
-        return user;
+       /* User user= userMapper.findByName("likai");
+        return user;*/
+       return null ;
     }
 
 
