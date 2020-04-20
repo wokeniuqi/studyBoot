@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.util.redissoon.DistributedRedisLock;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -17,10 +18,13 @@ public class DemoApplicationTests {
 
 	@Test
 	public void contextLoads() {
-
+		String key = "test123";
+		DistributedRedisLock.acquire(key);
 		    System.out.println("开始了");
 			String rtn = serviceDemo.queryDemo();
 		    System.out.println("返回的结果"+rtn);
+		//释放锁
+		DistributedRedisLock.release(key);
 	}
 
 }
