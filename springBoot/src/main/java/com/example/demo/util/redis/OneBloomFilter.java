@@ -5,7 +5,7 @@ import java.util.BitSet;
 import java.util.List;
 
 /**
- * @Description: 实现简单的布隆过滤器
+ * @Description: 实现简单的布隆过滤器 解决缓存穿透
  * @Author: zhangchao
  * @Date: 2020/4/20 12:55
  */

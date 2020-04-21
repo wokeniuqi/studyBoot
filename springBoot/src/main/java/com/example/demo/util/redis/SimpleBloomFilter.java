@@ -3,7 +3,7 @@ package com.example.demo.util.redis;
 import java.util.BitSet;
 
 /**
- *@Description: 布隆过滤器简单实践
+ *@Description: 布隆过滤器简单实践 解决缓存穿透
  *@Author: zhangchao
  *@Date: 2020/4/20 13:06
 */

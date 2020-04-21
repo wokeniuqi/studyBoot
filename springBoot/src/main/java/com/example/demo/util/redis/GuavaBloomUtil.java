@@ -6,10 +6,10 @@ import com.google.common.hash.Funnels;
 import java.nio.charset.Charset;
 
 /**
- *@Description: 基于Guava实现的布隆过滤器
- *@Author: zhangchao
- *@Date: 2020/4/20 13:13
-*/
+ * @Description: 基于Guava实现的布隆过滤器（解决缓存穿透）
+ * @Author: zhangchao
+ * @Date: 2020/4/20 13:13
+ */
 public class GuavaBloomUtil {
 
     public static void main(String[] args) {
