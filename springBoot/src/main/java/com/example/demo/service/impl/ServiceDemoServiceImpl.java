@@ -7,7 +7,6 @@ import com.example.demo.service.ServiceDemoService;
 public class ServiceDemoServiceImpl implements ServiceDemoService{
     @Override
     public String queryDemo(){
-
         return "11";
     }
 }

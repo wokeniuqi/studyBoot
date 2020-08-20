@@ -1,5 +1,6 @@
 package com.example.demo.service.impl;
 
+import com.example.demo.service.JsonConverter;
 import com.example.demo.service.RabbitMqService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 import java.util.Map;
 
 @Service
@@ -18,7 +21,8 @@ public class RabbitMqServiceImpl implements RabbitMqService {
     @Value("${rabbit.common.exchange:s1-base-bus}")
     public String S1_BASE_EXCHANGE;
 
-
+    @Resource
+    private JsonConverter jsonConverter ;
     /**
      * mq消息模板
      */
